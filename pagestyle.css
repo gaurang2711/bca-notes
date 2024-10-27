@@ -1,0 +1,135 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.stackedit__toc a {
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.goBack{
+    border-radius: 15px;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.goBack:hover{
+    transform: translateX(-3px);
+    transition: all ease .5s;
+}
+
+.dark-mode .goBack{
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.dark-mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dark-mode-button:hover {
+    transform: translateY(-2px);
+    background-color: #666;
+    box-shadow: 1px 1px 1px 1px #000000;
+    font-weight: 500;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #ddd;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.dark-mode .dark-mode-button {
+    background-color: #fffefe;
+    color: #000000;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dark-mode .dark-mode-button:hover {
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 1px 1px 1px 1px #ffffff91;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Dark Mode Styles for this specific page */
+body.dark-mode .stackedit__left {
+    background-color: #222;
+}
+
+body.dark-mode pre.language-html {
+    background-color: #333;
+    /* Or any color that provides good contrast */
+}
+
+body.dark-mode code.prism.language-html {
+    color: #ccc;
+    /* Light color for code */
+
+}
+
+/* Sticky Footer */
+#footer {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    /* Light gray background */
+    padding: 5px 0;
+    /* Small padding */
+    text-align: center;
+    font-size: small;
+    z-index: 99;
+    /* Ensure it's above other content but below the button */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+@media print {
+    #footer {
+        display: none;
+    }
+}
+
+body.dark-mode #footer {
+    /* Dark mode footer styling */
+    background-color: #222222;
+    color: #ccc;
+}

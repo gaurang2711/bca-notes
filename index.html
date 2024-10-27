@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="dark-mode-button" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i> <span>Dark Mode</span></button>
+
+    <div class="container">
+        <h1>Bachelor of Computer Applications</h1>
+        <div class="intro">
+            <p>Welcome to the collection of notes for the Bachelor of Computer Applications course. These notes cover a
+                wide range of topics and are designed to be concise and easy to understand. They're a great resource for
+                studying and reviewing key concepts. Feel free to explore!</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="note-box">
+                <a href="Semester 1.html">
+                    <h3>Semester I</h3>
+                </a>
+            </div>
+            <div class="note-box">
+                <a href="Semester 2.html">
+                    <h3>Semester II</h3>
+                </a>
+            </div>
+            <div class="note-box">
+                <a href="Semester 3.html">
+                    <h3>Semester III</h3>
+                </a>
+            </div>
+            <div class="note-box">
+                <a href="Semester 4.html">
+                    <h3>Semester IV</h3>
+                </a>
+            </div>
+            <div class="note-box">
+                <a href="Semester 5.html">
+                    <h3>Semester V</h3>
+                </a>
+            </div>
+            <div class="note-box">
+                <a href="Semester 6.html">
+                    <h3>Semester VI</h3>
+                </a>
+            </div>
+            <div class="note-box" id="nb">
+                <a href="syllabus.html">
+                    <h3>Syllabus</h3>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            Notes prepared by <a href="https://instagram.com/simply_aaman" target="_blank"
+                rel="noopener noreferrer">Aman</a> & <a href="https://instagram.com/d.gaurang_">Gaurang</a>, refined by
+            AI. <br>
+            Live Visior Counter:<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1254228/t/5" id="daid"></script></div>
+    </div>
+
+
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+
+            // Optional: Save user preference to localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.removeItem('darkMode');
+            }
+        }
+
+        // Check localStorage on page load (optional)
+        window.onload = () => {
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        };
+    </script>
+</body>
+
+</html>

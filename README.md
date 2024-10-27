@@ -39,9 +39,10 @@ Contributions are welcome!  If you find any errors, typos, or want to add/improv
 
 ## Connect with the Creator
 
-👋 This repository was lovingly crafted by Aman. Connect with him on Instagram!
+👋 This repository was lovingly crafted by Aman and Gaurang. Connect with him on Instagram!
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/simplyaaman)
+[![Aman Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/simply_aaman)
+[![Gaurang Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/d.gaurang_)
 
 
 ## Disclaimer
